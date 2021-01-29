@@ -1,0 +1,79 @@
+<html>
+<head>
+  <title>Cookieテスト</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="content-script-type" content="text/javascript" />
+  <script type="text/javascript" src="prototype.js"></script>
+  <script type="text/javascript" src="cookie.js"></script>
+</head>
+
+<body bgcolor="#FFFFFF">
+<form name="frm" id="inputForm">
+  <input type="hidden" id="iparam" name="param" value="">
+  <div align="left">
+  <table width="600" border="0">
+    <tr>
+	  <font color="#FF00FF" size="+3">□</font>
+          ＨＡＬシネマ　会員登録（cookie編）
+	  <font color="#FF00FF" size="+3">□</font>
+          <table width="460" border="1" bordercolor="darkblue">
+            <tr bgcolor="#CCFFCC"> 
+              <td  bgcolor="#98FB98"> 
+                <div align="left"><font size="-1">お名前</font></div>
+              </td>
+              <td colspan="3"> 
+                <div align="left"><font size="-1">
+                  <input type="text" id="inamae" name="namae" size="20" value="">
+                  様 </font></div>
+              </td>
+            </tr>
+            <tr bgcolor="#CCFFCC">
+              <td height="2" bgcolor="#98FB98"><font size="-1">性別</font></td>
+              <td height="2" colspan="3"><font size="-1"> 
+                <input type="radio" id="otoko" name="seibetu" value="M">男性
+                <input type="radio" id="onna" name="seibetu" value="F">女性
+	          </td>
+            </tr>
+            <tr bgcolor="#CCFFCC"> 
+              <td height="0" bgcolor="#98FB98"><font size="-1">E-mail</font></td>
+              <td height="2" colspan="3"> <font size="-1"> 
+                <input type="text" id="ie_mail" name="e_mail" size="40" value="">
+                </font>
+              </td>
+            </tr>
+            <tr bgcolor="#CCFFCC"> 
+              <td height="0" rowspan="2" bgcolor="#98FB98"><font size="-1">秘密の質問</font></td>
+              <td height="2" colspan="3"> <font size="-1">あなたの好きな動物は？</font></td>
+            </tr>
+            <tr bgcolor="#CCFFCC">
+              <td height="2" colspan="3"> <font size="-1">
+                <input type="text" id="isitumon" name="situmon" size="40" value="">
+                </font>
+              </td>
+            </tr>
+          </table>
+          <table width="451" border="0">
+            <tr> 
+              <td width="430"><font size="-1"></font></td>
+              <td width="35"> <font size="-1"> 
+                <input type="button" value="クッキーへ入れる" onClick="cookie_write()">
+                </font></td>
+              <td width="35"> <font size="-1"> 
+                <input type="reset" value="クリア">
+                </font></td>
+              <td width="35"> <font size="-1"> 
+                <input type="button" value="クッキーから出す" onClick="cookie_read()">
+                </font></td>
+               <td width="35"> <font size="-1"> 
+                <input type="button" value="テストデータ" onClick="testdata()">
+                </font></td>
+            </tr>
+          </table>
+        </form>
+      </td>
+    </tr>
+  </table>
+  <div id="empty"></div>
+</div>
+</body>
+</html>

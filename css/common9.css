@@ -1,0 +1,118 @@
+
+body{
+  color: #fff;
+  background-color: #00ced1;
+  text-align: center;
+}
+
+.cp_iptxt {
+  position: relative;
+  width: 50%;
+  margin: 40px 3%;
+}
+.cp_iptxt input[type='text'] {
+  font: 15px/24px sans-serif;
+  box-sizing: border-box;
+  width: 100%;
+  letter-spacing: 1px;
+  padding-left: 4em;
+}
+.cp_iptxt input[type='text']:focus {
+  outline: none;
+}
+.ef {
+  padding: 4px 0;
+  border: 0;
+  border-bottom: 1px solid #1b2538;
+  background-color: transparent;
+}
+.ef ~ .focus_line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  transition: 0.4s;
+  background-color: #4169e1;
+}
+.ef:focus ~ .focus_line,
+.cp_iptxt.ef ~ .focus_line {
+  width: 100%;
+  transition: 0.4s;
+}
+.ef ~ label {
+  position: absolute;
+  z-index: -1;
+  top: 4px;
+  left: 0;
+  width: 100%;
+  transition: 0.3s;
+  letter-spacing: 0.5px;
+  color: #fff;
+}
+.ef:focus ~ label, .cp_iptxt.ef ~ label {
+  font-size: 12px;
+  top: -16px;
+  transition: 0.3s;
+  color: #4169e1;
+}
+
+label.kensakuwa-do{
+  text-align: left;
+}
+
+
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  padding: 0;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 15px -6px #00000073;
+}
+
+table tr {
+  background-color: #fff;
+}
+
+table th,
+table td {
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+
+table  th {
+  width: 20%;
+  padding: 10px 0;
+  font-size: 14px;
+  padding: 15px;
+  background-color: #FFC107;
+  color:#fff;
+}
+
+table th.meisyou{
+  width: 50%;
+  padding: 10px 0;
+  font-size: 14px;
+  padding: 15px;
+  background-color: #FFC107;
+  color:#fff;
+}
+
+table tr{
+  text-align: center;
+  width: 20%;
+  padding: 20px 0;
+  background-color: #fff;
+  color:#3a3a3a;
+}
+
+table td:hover{
+  background-color: #d4faff;
+}
+
+table td.none:hover{
+  background-color: #fff;
+}

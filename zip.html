@@ -1,0 +1,52 @@
+<html>
+<head>
+  <title>Cookieテスト</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="content-script-type" content="text/javascript" />
+  <script type="text/javascript" src="prototype.js"></script>
+  <script type="text/javascript" src="zip.js"></script>
+</head>
+
+<body bgcolor="#FFFFFF">
+<form name="frm" id="inputForm">
+  <input type="hidden" id="iparam" name="param" value="">
+  <div align="left">
+  <table width="600" border="0">
+    <tr>
+	  <font color="#FF00FF" size="+3">□</font>
+          郵便番号検索
+	  <font color="#FF00FF" size="+3">□</font>
+          <table width="460" border="1" bordercolor="darkblue">
+            <tr bgcolor="#CCFFCC"> 
+              <td  bgcolor="#98FB98"> 
+                <div align="left"><font size="-1">郵便番号</font></div>
+              </td>
+              <td colspan="3"> 
+                <div align="left"><font size="-1">
+                  <input type="text" id="izip_no" name="zip_no" size="20" value="">
+                  </font></div>
+              </td>
+            </tr>
+            <tr bgcolor="#CCFFCC"> 
+              <td height="0" bgcolor="#98FB98"><font size="-1">住所</font></td>
+              <td height="2" colspan="3"> <font size="-1"> 
+                <input type="text" id="izip_address" name="zip_address" size="60" value="">
+                </font>
+              </td>
+            </tr>
+
+          </table>
+          <table width="451" border="0">
+            <tr> 
+              <td width="35"> <font size="-1"> 
+                <input type="button" value="郵便番号検索" onClick="zip_read()">
+                </font></td>
+            </tr>
+          </table>
+        </form>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

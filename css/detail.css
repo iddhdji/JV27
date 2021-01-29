@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+table{
+  border-collapse: separate;
+  border-spacing: 0px 5px;
+  margin: 0 auto;
+}
+td,th{
+  padding: 10px;
+}
+th{
+  background: #10a0e0;
+  color: #fff;
+}
+td{
+  background: #f1fafe;
+}
+
+a{
+            padding: 10px 40px;
+            background: #fb5859;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 3px;
+            display: inline-block;
+        }
+ 
